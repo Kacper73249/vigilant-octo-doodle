@@ -401,9 +401,10 @@ position = Vector2(1110, 107)
 [node name="Enemy5" parent="SceneObjects/Enemies" unique_id=1554017214 instance=ExtResource("9_oyk6k")]
 position = Vector2(1029, 397)
 
-[node name="GameManager" type="Node" parent="." unique_id=1153608489]
+[node name="GameManager" type="Node" parent="." unique_id=1153608489 node_paths=PackedStringArray("hearts")]
 unique_name_in_owner = true
 script = ExtResource("6_3opl0")
+hearts = [NodePath("../UI/Panel/Hearts/HBoxContainer/Heart"), NodePath("../UI/Panel/Hearts/HBoxContainer/Heart2"), NodePath("../UI/Panel/Hearts/HBoxContainer/Heart3")]
 
 [node name="UI" type="CanvasLayer" parent="." unique_id=1381833361]
 

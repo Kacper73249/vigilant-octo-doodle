@@ -395,6 +395,12 @@ position = Vector2(636, 394)
 [node name="Enemy2" parent="SceneObjects/Enemies" unique_id=863865446 instance=ExtResource("1_conm7")]
 position = Vector2(364, 109)
 
+[node name="Enemy3" parent="SceneObjects/Enemies" unique_id=573300270 instance=ExtResource("1_conm7")]
+position = Vector2(1901, 493)
+
+[node name="Enemy4" parent="SceneObjects/Enemies" unique_id=804495452 instance=ExtResource("1_conm7")]
+position = Vector2(1464, 108)
+
 [node name="Area2D" type="Area2D" parent="SceneObjects" unique_id=179714005]
 position = Vector2(1615, 751)
 script = ExtResource("8_d3jkd")
@@ -526,12 +532,6 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 32
 theme_override_styles/normal = SubResource("StyleBoxFlat_nfihu")
 text = "Main Menu"
-
-[node name="Enemy" parent="UI" unique_id=573300270 instance=ExtResource("1_conm7")]
-position = Vector2(1901, 493)
-
-[node name="Enemy2" parent="UI" unique_id=804495452 instance=ExtResource("1_conm7")]
-position = Vector2(1464, 108)
 
 [connection signal="body_entered" from="SceneObjects/Area2D" to="SceneObjects/Area2D" method="_on_body_entered"]
 [connection signal="pressed" from="UI/Pause/PausePanel/VBoxContainer/Resume" to="UI/Pause" method="_on_resume_pressed"]
